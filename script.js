@@ -49,7 +49,20 @@ const fetchData = async () => {
     })
     .catch(error => {
       console.error('Error:', error);
-      return error;
+      const container = document.getElementsByClassName('mainContainer')[0];
+      container.classList = 'error';
+      const errorHeader = document.createElement('div');
+      errorHeader.className = 'errorContainer';
+      const errorHeading = document.createElement('h1');
+      errorHeading.textContent = 'Something went wrong!';
+      const errorInfo = document.createTextNode("please check your internet connection and try again.");
+      errorHeader.appendChild(errorHeading);
+      errorHeader.appendChild(errorInfo);
+      const errorText = document.createElement('p');
+      errorText.textContent = error;
+      errorText.className = 'errorMessage';
+      container.appendChild(errorHeader);
+      container.appendChild(errorText);
     })
 }
 

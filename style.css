@@ -39,3 +39,31 @@
     font-size: 1.3rem;
     font-weight: 600;
 }
+
+.error {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #8e8e8e;
+}
+
+.errorContainer h1 {
+    color: black;
+    margin-top: 11rem;
+    margin-bottom: 0.3rem;
+}
+
+.errorMessage {
+    background: #e1372142;
+    font-family:monospace;
+    color: #e13721;
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}

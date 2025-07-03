@@ -20,10 +20,11 @@ const fetchData = async () => {
         const address = [user.address?.street, user.address?.city, user.address?.zipcode]
         userAddress.textContent = address.join(', ');
         userAddress.className = 'address';
-        container.appendChild(id);
-        container.appendChild(userName);
-        container.appendChild(userEmail);
-        container.appendChild(userAddress);
+        card.appendChild(id);
+        card.appendChild(userName);
+        card.appendChild(userEmail);
+        card.appendChild(userAddress);
+        container.append(card);
       });
     })
     .catch(error => {

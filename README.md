@@ -31,3 +31,7 @@ cd task-7
 - HTML
 - CSS
 - JavaScript (fetch API, dynamic loading)
+
+## Error Handling UI
+- Displays a user-friendly error message if the user data fails to load.
+- Provides guidance to the user to retry or check their internet connection.
